@@ -1,10 +1,10 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bariqly Privacy Policy">
+  <meta name="description" content="Bariqly Privacy Policy explaining how information is processed, stored and protected.">
   <title>Privacy Policy | Bariqly</title>
   <style>
     body {
@@ -48,7 +48,8 @@
 
   <p>
     This Privacy Policy explains what information Bariqly processes,
-    how it is used, and how you can contact us about your data.
+    why it is used, which services help process it and how you can
+    contact us about your information.
   </p>
 
   <h2>1. Information We Process</h2>
@@ -56,122 +57,173 @@
   <h3>Anonymous app identifier</h3>
   <p>
     Bariqly uses Firebase Anonymous Authentication to create an
-    anonymous identifier. This identifier helps associate community
-    submissions and bug reports with the user who submitted them.
-    It does not require a conventional email-and-password account.
+    anonymous user identifier. This identifier helps associate
+    community submissions and bug reports with the app installation
+    that submitted them. It does not require you to register with
+    an email address and password.
   </p>
 
   <h3>Location information</h3>
   <p>
-    With your permission, Bariqly uses device location to calculate
-    prayer times and support location-based features. You may also
-    select a location manually instead of granting device location
-    permission.
+    With your permission, Bariqly may access your device location
+    to calculate prayer times and support location-based features.
+    You can also choose a location manually instead of granting
+    device location permission. You can manage or revoke location
+    permission through your device settings.
   </p>
   <p>
-    When you submit a Prayer Spot, its location coordinates may be
-    stored in our database so other users can discover it.
+    When you submit a community Prayer Spot, its location coordinates
+    are stored with the submission so that other users can discover
+    the place.
   </p>
 
   <h3>Photos and camera</h3>
   <p>
-    If you choose to use features that involve images, such as
-    submitting a Prayer Spot or using the Halal scanner, Bariqly may
-    access a photo you select or capture. Prayer Spot images are
-    uploaded to Cloudinary, and their image URLs are stored with
-    the associated community submission.
+    If you choose to use an image-related feature, Bariqly may access
+    a photo you select or capture. When you submit a Prayer Spot
+    with a photo, the image is uploaded to Cloudinary. The resulting
+    image URL is stored with the associated community submission
+    in Firebase.
+  </p>
+  <p>
+    Images selected for Halal scanning are processed on your device
+    by the scanner's text-recognition workflow. The barcode lookup
+    feature sends the scanned product barcode to Open Food Facts.
   </p>
 
-  <h3>Community submissions and bug reports</h3>
+  <h3>Community submissions and reports</h3>
   <p>
-    Information you voluntarily submit may include Prayer Spot names,
-    descriptions, amenities, photographs, location coordinates,
-    confirmations, reports and bug report details or screenshots.
-    These submissions are processed using Firebase services.
+    If you use community features, information you submit may include
+    Prayer Spot names, categories, descriptions, amenities, photos,
+    location coordinates, confirmations and reports. Prayer Spot
+    submissions are associated with your anonymous app identifier.
+  </p>
+  <p>
+    Prayer Spot information can be read by authenticated Bariqly
+    users. Confirmation and report records are restricted by the
+    current database rules to the authenticated user associated
+    with each record.
+  </p>
+
+  <h3>Bug reports</h3>
+  <p>
+    If you submit a bug report, Bariqly may process the details and
+    any screenshots you choose to provide. Bug reports are associated
+    with your anonymous app identifier. Under the current database
+    rules, a report can be read by its submitting user.
   </p>
 
   <h3>Analytics information</h3>
   <p>
-    Bariqly uses Firebase Analytics to understand app usage and
-    improve its features. Events include Khatam challenge activity,
-    Khatam milestones, Halal scans, Prayer Spot submissions,
-    bug report submissions and support purchases.
+    Bariqly uses Firebase Analytics to understand feature usage and
+    improve the app. Events implemented in the app include Khatam
+    challenge activity, Khatam milestones, Halal scans, Prayer Spot
+    submissions, bug report submissions and support-purchase events.
+  </p>
+  <p>
+    Some analytics information may be collected automatically by
+    Firebase and may include app usage, app instance identifiers,
+    device or operating system information and approximate
+    geographic information. The information collected can depend
+    on the platform and service configuration.
+  </p>
+  <p>
+    Our configured Google Analytics retention settings are two months
+    for event data and fourteen months for user-level data covered
+    by those settings. These settings do not necessarily determine
+    how long aggregated reports or other service records are retained.
   </p>
 
   <h3>Information stored on your device</h3>
   <p>
+    Bariqly stores certain app information locally, which may include
     Quran bookmarks, reading position, Khatam progress, Tasbeeh
-    progress and app preferences may be stored locally on your
-    device. These are not intentionally transmitted as religious
-    reading-progress records to our backend.
+    progress and app preferences. These records are intended to
+    remain on your device and are not intentionally uploaded to
+    our backend as religious reading-progress records.
   </p>
-
-  <h3>Purchases</h3>
   <p>
-    Bariqly offers an in-app support feature. Payment transactions
-    are handled through the applicable app store payment system.
-    Bariqly does not ask you to send payment-card details directly
-    to us.
+    Local information may be affected by your device's backup,
+    restore and application-storage settings.
   </p>
 
   <h2>2. How We Use Information</h2>
   <ul>
     <li>To provide prayer times and location-based features.</li>
     <li>To display and manage community Prayer Spots.</li>
-    <li>To process user-submitted reports and feedback.</li>
+    <li>To associate submissions, confirmations and reports with users.</li>
+    <li>To receive and investigate bug reports and feedback.</li>
     <li>To maintain app functionality and preferences.</li>
     <li>To understand feature usage and improve Bariqly.</li>
-    <li>To process voluntary support purchases.</li>
   </ul>
 
   <h2>3. Third-Party Services</h2>
   <p>
-    Bariqly uses third-party services to operate certain features.
-    These services process information according to their own
-    privacy policies and applicable agreements.
+    Bariqly relies on third-party services for certain app features.
+    Those providers process information under their own privacy
+    policies and applicable terms.
   </p>
   <ul>
     <li>
-      <strong>Google Firebase:</strong> anonymous authentication,
-      database services and app analytics.
+      <strong>Google Firebase:</strong> used for anonymous
+      authentication, database services and analytics.
       <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>
     </li>
     <li>
-      <strong>Cloudinary:</strong> hosting images submitted for
-      community features.
+      <strong>Cloudinary:</strong> used to host images submitted
+      with community features.
       <a href="https://cloudinary.com/privacy">Cloudinary Privacy</a>
     </li>
     <li>
-      <strong>App Store payment services:</strong> processing
-      in-app purchases through the relevant platform.
+      <strong>Open Food Facts:</strong> used to look up product
+      information using scanned barcodes.
+      <a href="https://world.openfoodfacts.org/privacy">Open Food Facts Privacy</a>
     </li>
   </ul>
 
   <h2>4. Data Sharing and Sale</h2>
   <p>
-    We do not sell personal information. Information is processed
-    by the service providers described above to operate Bariqly.
-    Community submissions may be visible to other authenticated
-    users, depending on the feature.
+    We do not sell personal information. Information may be processed
+    by the service providers described in this policy to operate
+    Bariqly's features.
+  </p>
+  <p>
+    Prayer Spot submissions are available to authenticated users
+    so they can discover community locations. Confirmation and
+    report records are subject to the access restrictions described
+    above. We may also disclose information where required by law
+    or where necessary to protect the security and rights of users
+    and the service.
   </p>
 
   <h2>5. Data Retention</h2>
   <p>
-    Local information may remain on your device until it is cleared
-    or the app is uninstalled. Server-side information may remain
-    in Firebase or Cloudinary until it is deleted through the
-    applicable service or following a verified deletion request.
+    Information stored locally may remain on your device until you
+    clear the relevant app data or uninstall the app. Device backups
+    may affect whether some local information remains available.
   </p>
   <p>
-    Specific retention periods for analytics and hosted images
-    depend on the relevant service configuration. We do not
-    currently publish a fixed retention period for all data.
+    Community submissions, bug reports and associated database
+    records may remain in Firebase until they are deleted through
+    the applicable administrative process. Community records do
+    not currently have a published automatic expiry period.
+  </p>
+  <p>
+    Images uploaded to Cloudinary may remain hosted until they are
+    deleted through the applicable Cloudinary process. We do not
+    currently publish a fixed automatic deletion period for hosted
+    images.
+  </p>
+  <p>
+    Analytics retention is described in the Analytics section above.
+    Actual retention may also depend on provider settings and
+    applicable service policies.
   </p>
 
   <h2>6. Data Deletion Requests</h2>
   <p>
     You can request deletion of information associated with your
-    Bariqly submissions by contacting us at:
+    Bariqly app identifier by contacting:
   </p>
   <p>
     <a href="mailto:bariqly.help@gmail.com">
@@ -179,37 +231,48 @@
     </a>
   </p>
   <p>
-    Include your anonymous Bariqly user ID, if available, and
-    describe the information you want deleted. We may request
-    additional information to verify the request.
+    To help us locate your records, open Bariqly and go to
+    <strong>Settings → Help &amp; Support → Copy Support ID</strong>.
+    Include the copied Support ID in your email and describe the
+    information you want deleted.
   </p>
   <p>
-    Requests involving Firestore records and hosted images may
-    require manual processing. We will review requests and explain
-    any information that cannot be deleted.
+    Deletion requests are handled manually. Depending on the request,
+    this may involve separate deletion of Firebase database records,
+    associated subcollection records, hosted Cloudinary images and
+    the anonymous authentication identity. Deleting one item does
+    not necessarily delete related information held by another
+    service.
+  </p>
+  <p>
+    We will review requests and explain if any information cannot
+    be deleted or must be retained for a legal or legitimate
+    operational reason. We do not currently provide an automated
+    in-app deletion process or promise a fixed completion timeframe.
   </p>
 
   <h2>7. Security</h2>
   <p>
-    Bariqly uses third-party infrastructure and encrypted network
-    connections for supported data transfers. No method of
-    electronic storage or transmission can be guaranteed to be
-    completely secure.
+    Bariqly uses third-party infrastructure and security controls
+    intended to protect information. Network connections to
+    supported services use encrypted connections where provided.
+    However, no method of electronic storage or transmission can
+    be guaranteed to be completely secure.
   </p>
 
   <h2>8. Children's Privacy</h2>
   <p>
-    Bariqly is not knowingly designed to collect personal
-    information from children in violation of applicable laws.
-    If you believe a child has provided information improperly,
-    contact us.
+    Bariqly does not knowingly seek to collect personal information
+    from children in violation of applicable privacy laws. If you
+    believe a child has provided information inappropriately,
+    please contact us so that we can review the matter.
   </p>
 
   <h2>9. Changes to This Policy</h2>
   <p>
-    We may update this Privacy Policy as Bariqly's features or
-    data practices change. The latest version will be published
-    on this page with an updated date.
+    We may update this Privacy Policy when Bariqly's features,
+    service providers or data practices change. The latest version
+    will be published on this page with an updated date.
   </p>
 
   <h2>10. Contact Us</h2>
@@ -229,3 +292,4 @@
 </main>
 </body>
 </html>
+```
